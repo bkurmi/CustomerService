@@ -65,7 +65,7 @@ public class CustomerController {
             System.out.println("Updated");
             //return restTemplate.exchange("http://"+ipAddress+":8089/personal/address", HttpMethod.GET, entity, String.class).getBody();
             //return restTemplate.exchange("http://customer-service.local:1000/personal/address", HttpMethod.GET, entity, String.class).getBody();
-            return restTemplate.exchange("https://0.0.0.0:10000/personal/address", HttpMethod.GET, entity, String.class).getBody();
+            return restTemplate.exchange("https://0.0.0.0:10000/profiles", HttpMethod.GET, entity, String.class).getBody();
             //return restTemplate.exchange("http://127.0.0.1:8089/personal/address", HttpMethod.GET, entity, String.class).getBody();
             //return restTemplate.exchange("http://localhost:8083/personal/address", HttpMethod.GET, entity, String.class).getBody();
         }catch(Exception e) {
